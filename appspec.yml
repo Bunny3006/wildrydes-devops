@@ -1,9 +1,9 @@
-version: 1
+version: 0.0
 Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "REPLACED_AT_DEPLOYMENT"
+        TaskDefinition: "<TASK_DEFINITION>"
         LoadBalancerInfo:
-          ContainerName: "WildRydesApp"
+          ContainerName: "wildrydes-app"
           ContainerPort: 8080
